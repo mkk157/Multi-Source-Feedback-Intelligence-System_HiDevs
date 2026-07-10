@@ -9,3 +9,9 @@ python-dotenv
 langchain
 langchain-community
 langchain-text-splitters
+
+chromadb
+sentence-transformers
+
+langchain-chroma
+langchain-huggingface
