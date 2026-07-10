@@ -3,8 +3,22 @@ __pycache__/
 *.py[cod]
 venv/
 env/
+
+# Environment variables
+.env
+
+# Operating systems
 .DS_Store
+
+# Node
 node_modules/
+
+# IDE
 .idea/
 .vscode/
+
+# Logs
 *.log
+
+# ChromaDB
+chroma_db/

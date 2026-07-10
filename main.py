@@ -1,25 +1,12 @@
-import pandas as pd
+from src.rag.rag_chain import answer_question
 
-from src.chunking.text_chunker import (
-    create_documents,
-    create_chunks
-)
 
-from src.embeddings.vector_store import (
-    create_vector_store
-)
+question = "Summarize negative feedback from customers."
 
-df = pd.read_csv(
-    "data/processed/cleaned_feedback.csv"
-)
+response = answer_question(question)
 
-documents = create_documents(df)
+print("\nQuestion:")
+print(question)
 
-chunks = create_chunks(documents)
-
-print("Documents:", len(documents))
-print("Chunks:", len(chunks))
-
-vector_store = create_vector_store(chunks)
-
-print("\nVector Store Created Successfully")
+print("\nResponse:\n")
+print(response)

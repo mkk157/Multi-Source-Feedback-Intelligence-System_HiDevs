@@ -15,3 +15,5 @@ sentence-transformers
 
 langchain-chroma
 langchain-huggingface
+
+langchain-groq
