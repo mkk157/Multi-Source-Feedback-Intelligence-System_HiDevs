@@ -1,30 +1,29 @@
 import pandas as pd
 
-from src.preprocessing.data_cleaner import (
-    clean_feedback_data
+from src.chunking.text_chunker import (
+    create_documents,
+    create_chunks
 )
 
-# Load dataset
 df = pd.read_csv(
-    "data/processed/master_feedback.csv"
+    "data/processed/cleaned_feedback.csv"
 )
 
-# Clean dataset
-clean_df = clean_feedback_data(df)
+documents = create_documents(df)
 
-# Save
-clean_df.to_csv(
-    "data/processed/cleaned_feedback.csv",
-    index=False
-)
+chunks = create_chunks(documents)
 
-print("\nCleaned dataset created successfully!")
+print("\nTotal Reviews:")
+print(len(df))
 
-print("\nShape:")
-print(clean_df.shape)
+print("\nDocuments Created:")
+print(len(documents))
 
-print("\nColumns:")
-print(clean_df.columns.tolist())
+print("\nChunks Created:")
+print(len(chunks))
 
-print("\nSample:")
-print(clean_df.head())
+print("\nFirst Chunk:\n")
+print(chunks[0].page_content)
+
+print("\nMetadata:\n")
+print(chunks[0].metadata)

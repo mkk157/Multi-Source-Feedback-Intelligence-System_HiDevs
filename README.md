@@ -7,3 +7,15 @@ This project is automatically generated.
 ```sh
 pip install -r requirements.txt
 ```
+
+## Step 3 - Splitting and Chunking
+
+The RecursiveCharacterTextSplitter was selected based on the
+HiDevs recommendation that it is a general-purpose splitter
+capable of maintaining semantic coherence across document types.
+
+Chunk size was configured at 500 characters with 100-character
+overlap.
+
+Since customer reviews are typically short, most reviews resulted
+in a one-to-one mapping between documents and chunks.

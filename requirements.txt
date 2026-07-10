@@ -5,3 +5,7 @@ requests
 feedparser
 google-play-scraper
 python-dotenv
+
+langchain
+langchain-community
+langchain-text-splitters
