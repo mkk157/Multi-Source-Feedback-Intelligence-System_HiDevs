@@ -366,29 +366,61 @@ with tab4:
 
     st.header("🏗️ Solution Architecture")
 
+    st.markdown("### End-to-End Data Flow")
+
     st.markdown("""
-### End-to-End Data Flow
+<div style="
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap;
+    font-size:20px;
+    font-weight:bold;
+    gap:15px;
+">
 
-Google Play Reviews  
-⬇️  
-Survey Feedback  
-⬇️  
-Data Preprocessing  
-⬇️  
-Chunking  
-⬇️  
-Embeddings (MiniLM-L6-v2)  
-⬇️  
-ChromaDB Vector Store  
-⬇️  
-Retriever  
-⬇️  
-Groq Llama 3  
-⬇️  
-Streamlit UI
+<span>Google Play Reviews</span>
 
----
+<span style="font-size:32px;">➡️</span>
 
+<span>Survey Feedback</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Preprocessing</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Chunking</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Embeddings</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>ChromaDB</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Retriever</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Groq Llama 3</span>
+
+<span style="font-size:32px;">➡️</span>
+
+<span>Streamlit UI</span>
+
+</div>
+""",
+    unsafe_allow_html=True
+)
+
+    st.divider()
+
+    st.markdown("""
 ### HiDevs Framework Mapping
 
 ✅ Step 1 – Data Sources
@@ -403,5 +435,5 @@ Streamlit UI
 
 ✅ Step 6 – UI Development
 
-⬜ Step 7 – Testing & Optimization
+✅ Step 7 – Testing & Optimization
 """)
