@@ -255,7 +255,12 @@ Shows complete end-to-end solution flow.
 
 > ![Architecture](image-3.png)
 ---
+ 
+## 🎥 Project Demo Video
 
+[▶️ Watch the YouTube Demo](https://youtu.be/NnJH3zVzK5k?si=X3e_pkYNUNKHLwcw)
+
+---
 ## ⚙️ Installation
 
 Clone the repository:
